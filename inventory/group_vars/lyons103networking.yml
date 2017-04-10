@@ -1,0 +1,9 @@
+---
+vlans:
+  - { vlan_id: 10,  name: Data}
+  - { vlan_id: 20,  name: Voice}
+  - { vlan_id: 30,  name: Staff-WIFI}
+  - { vlan_id: 32,  name: Student-WIFI}
+  - { vlan_id: 35,  name: Guest-WIFI}
+  - { vlan_id: 99,  name: Management}
+  

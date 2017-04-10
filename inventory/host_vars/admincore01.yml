@@ -1,0 +1,11 @@
+---
+
+trunk_ports:
+  - port: Ethernet0/1
+  - port: Ethernet0/2
+
+wan_port: Ethernet0/0
+wan_ip: "172.100.99.1"
+wan_mask: "255.255.255.252"
+
+hostname: admincore01

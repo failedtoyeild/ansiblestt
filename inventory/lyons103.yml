@@ -1,0 +1,85 @@
+[admin:children]
+admincore
+adminaccess
+
+[admincore]
+admincore01 ansible_host=10.0.0.101
+
+[adminaccess]
+adminaccess01 ansible_host=10.0.0.108
+adminaccess02 ansible_host=10.0.0.109
+
+[costello:children]
+costellocore
+costelloaccess 
+
+[costellocore]
+costellocore01 ansible_host=10.0.0.102
+
+[costelloaccess]
+costelloaccess01 ansible_host=10.0.0.118
+costelloaccess02 ansible_host=10.0.0.119
+
+[edison:children]
+edisoncore
+edisonaccess
+
+[edisoncore]
+edisoncore01 ansible_host=10.0.0.103
+
+[edisonaccess]
+edisonaccess01 ansible_host=10.0.0.116
+edisonaccess02 ansible_host=10.0.0.117
+
+[home:children]
+homecore
+homeaccess
+
+[homecore]
+homecore01 ansible_host=10.0.0.104
+
+[homeaccess]
+homeaccess01 ansible_host=10.0.0.114
+homeaccess02 ansible_host=10.0.0.115
+
+[robinson:children]
+robinsoncore
+robinsonaccess
+
+[robinsoncore]
+robinsoncore01 ansible_host=10.0.0.105
+
+[robinsonaccess]
+robisonaccess01 ansible_host=10.0.0.112
+robinsonaccess02 ansible_host=10.0.0.113
+
+[lincoln:children]
+lincolncore
+lincolnaccess
+
+[lincolncore]
+lincolncore01 ansible_host=10.0.0.106
+
+[lincolnaccess]
+lincolnaccess01 ansible_host=10.0.0.110
+lincolnaccess02 ansible_host=10.0.0.111
+
+[lyons103networking:children]
+admin
+costello
+edison
+home
+robinson
+lincoln
+
+[lyons103cores:children]
+admincore
+costellocore
+edisoncore
+homecore
+robinsoncore
+lincolncore
+
+
+
+

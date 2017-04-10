@@ -1,0 +1,9 @@
+ansible_user: admin
+ansible_ssh_pass: cisco
+
+provider:
+  host: "{{ ansible_host }}"
+  username: admin
+  password: cisco
+  transport: cli
+  
